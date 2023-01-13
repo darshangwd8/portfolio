@@ -53,10 +53,6 @@ export default function Home() {
               learner and seeks feedback to improve solutions. Actively looking
               for Full stack development/Web Application development
               opportunities starting to work from Jan - 2023 full-time.
-              
-              
-                  <p>   HELLO FOR TESTING</p>
-                   
             </p>
           </div>
           <div className="gap-10 flex justify-center py-3 text-gray-600 ">
@@ -82,7 +78,11 @@ export default function Home() {
                 {" "}
                 Skills{" "}
               </h3>
-              <p className="py-2 leading-8">Filled later.....</p>
+              <p className="py-2 leading-8">
+                <ul>
+                  <li></li>
+                </ul>
+              </p>
             </div>
             <div>
               <div className="flex mx-auto justify-center">
