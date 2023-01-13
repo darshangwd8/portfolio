@@ -53,6 +53,10 @@ export default function Home() {
               learner and seeks feedback to improve solutions. Actively looking
               for Full stack development/Web Application development
               opportunities starting to work from Jan - 2023 full-time.
+              
+              
+                   HELLO FOR TESTING
+                   
             </p>
           </div>
           <div className="gap-10 flex justify-center py-3 text-gray-600 ">
