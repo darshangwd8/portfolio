@@ -20,78 +20,254 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="from-teal-700 bg-gradient-to-b">
-        <section className="bg-white min-h-screen">
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons">
-              developed using react/next.js
-            </h1>
-            <ul className='"flex items-center'>
-              <li>
-                <BsBatteryHalf className="cursor-pointer text-4xl" />
-              </li>
-              <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 bg-cyan-500 text-white px-4 py-2 rounded-md ml-50"
-                  href="#"
-                  target="_blank"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div className="text-center p-10 py-10">
-            <h2 className="text-teal-600 text-5xl py-2 font-semibold">
-              Darshan Shivaram
-            </h2>
-            <h3 className="text-3xl py-2">Software Developer(new grad) •</h3>
-            <p className="text-xl py-2 font-serif ">
-              • Software Engineer with customer facing product experience, with
-              ability to leverage full stack knowledge and engineering
-              principles to design and develop scalable applications. quick
-              learner and seeks feedback to improve solutions. Actively looking
-              for Full stack development/Web Application development
-              opportunities starting to work from Jan - 2023 full-time.
-            </p>
-          </div>
-          <div className="gap-10 flex justify-center py-3 text-gray-600 ">
-            <a href="https://github.com/darshangwd8" target="//#region">
-              <AiFillGithub className="text-5xl" alt="" />
-              click to open
-            </a>
-            <a
-              href="https://www.linkedin.com/in/darshanshivram/"
-              target="//#region "
-            >
-              <AiFillLinkedin className="text-5xl" alt="" />
-            </a>
-          </div>
-          <div className="relative  from-teal-500 bg-gradient-to-b rounded-full w-80 h-80 mt-10 mx-auto overflow-hidden">
-            <Image src={deved} layout="fill" objectFit="cover" alt="" />
-          </div>
-        </section>
-        <section>
-          <section>
-            <div className="text-center py-32">
-              <h3 className="text-3xl py-1 underline text-center text-slate-700">
-                {" "}
-                Skills{" "}
-              </h3>
-              <p className="py-2 leading-8">
-                <ul>
-                  <li></li>
-                </ul>
-              </p>
-            </div>
-            <div>
-              <div className="flex mx-auto justify-center">
-                <Image src={design} className="flex text-center" alt="" />
-                <Image src={code} className="flex text-center" alt="" />
-                <Image src={consulting} className="flex text-center" alt="" />
+             <main className="from-teal-700 bg-gradient-to-b min-h-screen">
+         <section className="bg-white min-h-screen relative overflow-hidden">
+           {/* Background decoration */}
+           <div className="absolute top-0 left-0 w-full h-full opacity-5">
+             <div className="absolute top-20 left-10 w-72 h-72 bg-teal-500 rounded-full blur-3xl"></div>
+             <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500 rounded-full blur-3xl"></div>
+           </div>
+           
+           <nav className="py-10 mb-12 flex justify-between items-center relative z-10">
+             <h1 className="text-xl font-burtons bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent font-semibold">
+               developed using react/next.js
+             </h1>
+             <ul className="flex items-center space-x-6">
+               <li>
+                 <BsBatteryHalf className="cursor-pointer text-4xl text-teal-600 hover:text-teal-700 transition-colors duration-300 hover:scale-110 transform" />
+               </li>
+               <li>
+                 <a
+                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md"
+                   href="/resume.html"
+                   target="_blank"
+                 >
+                   Resume
+                 </a>
+               </li>
+             </ul>
+           </nav>
+                                           <div className="text-center p-10 py-16 relative z-10">
+              <div className="animate-fade-in-up">
+                <h2 className="text-teal-600 text-6xl py-4 font-bold bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent animate-pulse-slow">
+                  Darshan Shivaram
+                </h2>
+                <h3 className="text-4xl py-4 font-semibold text-gray-800 mb-6 animate-slide-in-left">Software Developer & Backend Specialist</h3>
+                <p className="text-xl py-4 font-serif leading-relaxed max-w-5xl mx-auto text-gray-700 bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-gray-100 animate-slide-in-right hover:shadow-xl transition-all duration-500">
+                  Passionate software developer with extensive expertise in Java Backend Development and JavaScript. 
+                  Specializing in building scalable, high-performance applications using Spring Boot, microservices architecture, 
+                  and modern web technologies. Proven ability to leverage full-stack knowledge and engineering principles 
+                  to design and develop robust applications. Quick learner with strong problem-solving skills and a commitment 
+                  to writing clean, maintainable code. Actively seeking Full-Stack Development and Web Application Development 
+                  opportunities starting January 2023.
+                </p>
               </div>
             </div>
-          </section>
+                     <div className="flex justify-center items-center space-x-12 py-8 relative z-10">
+             <a 
+               href="https://github.com/darshangwd8" 
+               target="_blank"
+               className="group flex flex-col items-center space-y-2 text-gray-600 hover:text-teal-600 transition-all duration-300 transform hover:scale-110 animate-bounce-slow"
+             >
+               <div className="bg-white p-4 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 animate-float">
+                 <AiFillGithub className="text-5xl" alt="GitHub" />
+               </div>
+               <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">GitHub</span>
+             </a>
+             <a
+               href="https://www.linkedin.com/in/darshanshivram/"
+               target="_blank"
+               className="group flex flex-col items-center space-y-2 text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-110 animate-bounce-slow"
+               style={{ animationDelay: '0.5s' }}
+             >
+               <div className="bg-white p-4 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 animate-float" style={{ animationDelay: '0.5s' }}>
+                 <AiFillLinkedin className="text-5xl" alt="LinkedIn" />
+               </div>
+               <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">LinkedIn</span>
+             </a>
+           </div>
+                     <div className="relative from-teal-500 bg-gradient-to-b rounded-full w-80 h-80 mt-16 mx-auto overflow-hidden shadow-2xl border-4 border-white transform hover:scale-105 transition-transform duration-500 animate-float">
+             <Image src={deved} layout="fill" objectFit="cover" alt="Profile" />
+             <div className="absolute inset-0 bg-gradient-to-t from-teal-600/20 to-transparent rounded-full animate-pulse-glow"></div>
+           </div>
+        </section>
+        <section className="bg-gradient-to-br from-gray-50 to-gray-100 py-24 relative overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute top-0 left-0 w-full h-full opacity-10">
+            <div className="absolute top-10 right-10 w-64 h-64 bg-teal-400 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-10 left-10 w-80 h-80 bg-blue-400 rounded-full blur-3xl"></div>
+          </div>
+          
+          <div className="max-w-6xl mx-auto px-4 relative z-10">
+                         <div className="text-center mb-20">
+               <h3 className="text-5xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent animate-fade-in-up">
+                 Technical Skills
+               </h3>
+               <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-in-left">
+                 Full-stack development expertise with focus on Java Backend and modern web technologies
+               </p>
+             </div>
+            
+                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+               <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-l-4 border-teal-500 animate-fade-in-up">
+                 <h4 className="text-2xl font-bold text-teal-600 mb-6 flex items-center">
+                   <span className="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center mr-3 animate-spin-slow">⚙️</span>
+                   Backend Development
+                 </h4>
+                 <ul className="space-y-3 text-gray-700">
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.1s' }}><span className="w-2 h-2 bg-teal-500 rounded-full mr-3 animate-pulse"></span>Java 8/11/17</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.2s' }}><span className="w-2 h-2 bg-teal-500 rounded-full mr-3 animate-pulse"></span>Spring Boot & Spring Cloud</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.3s' }}><span className="w-2 h-2 bg-teal-500 rounded-full mr-3 animate-pulse"></span>RESTful APIs & Microservices</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.4s' }}><span className="w-2 h-2 bg-teal-500 rounded-full mr-3 animate-pulse"></span>JPA/Hibernate</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.5s' }}><span className="w-2 h-2 bg-teal-500 rounded-full mr-3 animate-pulse"></span>Maven & Gradle</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.6s' }}><span className="w-2 h-2 bg-teal-500 rounded-full mr-3 animate-pulse"></span>Redis & Caching</li>
+                 </ul>
+               </div>
+              
+                             <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-l-4 border-blue-500 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                 <h4 className="text-2xl font-bold text-blue-600 mb-6 flex items-center">
+                   <span className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3 animate-bounce-slow">🎨</span>
+                   Frontend Development
+                 </h4>
+                 <ul className="space-y-3 text-gray-700">
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.3s' }}><span className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></span>JavaScript (ES6+)</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.4s' }}><span className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></span>React.js & Next.js</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.5s' }}><span className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></span>Node.js & Express</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.6s' }}><span className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></span>TypeScript</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.7s' }}><span className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></span>HTML5 & CSS3</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.8s' }}><span className="w-2 h-2 bg-blue-500 rounded-full mr-3 animate-pulse"></span>Tailwind CSS</li>
+                 </ul>
+               </div>
+              
+                             <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-l-4 border-purple-500 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                 <h4 className="text-2xl font-bold text-purple-600 mb-6 flex items-center">
+                   <span className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 animate-pulse-glow">🗄️</span>
+                   Databases
+                 </h4>
+                 <ul className="space-y-3 text-gray-700">
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.5s' }}><span className="w-2 h-2 bg-purple-500 rounded-full mr-3 animate-pulse"></span>MySQL & PostgreSQL</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.6s' }}><span className="w-2 h-2 bg-purple-500 rounded-full mr-3 animate-pulse"></span>MongoDB</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.7s' }}><span className="w-2 h-2 bg-purple-500 rounded-full mr-3 animate-pulse"></span>Redis</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.8s' }}><span className="w-2 h-2 bg-purple-500 rounded-full mr-3 animate-pulse"></span>Database Design</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.9s' }}><span className="w-2 h-2 bg-purple-500 rounded-full mr-3 animate-pulse"></span>SQL Optimization</li>
+                 </ul>
+               </div>
+              
+                             <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-l-4 border-green-500 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+                 <h4 className="text-2xl font-bold text-green-600 mb-6 flex items-center">
+                   <span className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3 animate-bounce-slow">🚀</span>
+                   DevOps & Tools
+                 </h4>
+                 <ul className="space-y-3 text-gray-700">
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.7s' }}><span className="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></span>Docker & Kubernetes</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.8s' }}><span className="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></span>AWS Cloud Services</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '0.9s' }}><span className="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></span>Git & GitHub</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '1.0s' }}><span className="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></span>CI/CD Pipelines</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '1.1s' }}><span className="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></span>Linux/Unix</li>
+                   <li className="flex items-center animate-slide-in-left" style={{ animationDelay: '1.2s' }}><span className="w-2 h-2 bg-green-500 rounded-full mr-3 animate-pulse"></span>Postman & Swagger</li>
+                 </ul>
+               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-24 bg-white relative overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute top-0 left-0 w-full h-full opacity-5">
+            <div className="absolute top-20 right-20 w-96 h-96 bg-teal-400 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-20 left-20 w-80 h-80 bg-blue-400 rounded-full blur-3xl"></div>
+          </div>
+          
+          <div className="max-w-6xl mx-auto px-4 relative z-10">
+                         <div className="text-center mb-20">
+               <h3 className="text-5xl font-bold text-gray-800 mb-6 bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent animate-fade-in-up">
+                 Relevant Projects
+               </h3>
+               <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-slide-in-right">
+                 Showcasing my expertise in full-stack development and data analysis
+               </p>
+             </div>
+            
+                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+               <div className="group bg-gradient-to-br from-white to-gray-50 p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up">
+                 <div className="flex items-center mb-6">
+                   <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 animate-bounce-slow">
+                     <span className="text-2xl">📚</span>
+                   </div>
+                   <h4 className="text-2xl font-bold text-teal-600">Student Grade Entry Application</h4>
+                 </div>
+                 <p className="text-blue-600 font-semibold mb-4 bg-blue-50 px-4 py-2 rounded-lg inline-block animate-slide-in-left">Java Spring Boot, Thymeleaf, H2 Database, OAuth 2.0, Microservices, Eureka Server, Jenkins, AWS</p>
+                 <p className="text-gray-700 leading-relaxed animate-slide-in-right">
+                   Developed a microservice-based web application that allows teachers to securely authenticate, 
+                   enter grades for multiple students, and provides analytics for analyzing student performance. 
+                   Implemented OAuth 2.0 authentication, microservices architecture with Eureka Server for service 
+                   discovery, and deployed using Jenkins CI/CD pipeline on AWS cloud infrastructure.
+                 </p>
+               </div>
+              
+                             <div className="group bg-gradient-to-br from-white to-gray-50 p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+                 <div className="flex items-center mb-6">
+                   <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 animate-bounce-slow">
+                     <span className="text-2xl">🍕</span>
+                   </div>
+                   <h4 className="text-2xl font-bold text-teal-600">Food Ordering App</h4>
+                 </div>
+                 <p className="text-blue-600 font-semibold mb-4 bg-blue-50 px-4 py-2 rounded-lg inline-block animate-slide-in-left">Java Spring, MongoDB, React.js, Vercel</p>
+                 <p className="text-gray-700 leading-relaxed animate-slide-in-right">
+                   Developed a full-stack web application that allows users to browse restaurants, view menus, 
+                   place orders, and make payments online. Built with Java Spring backend, MongoDB database, 
+                   React.js frontend, and deployed on the Vercel platform for optimal performance and scalability.
+                 </p>
+               </div>
+              
+                             <div className="group bg-gradient-to-br from-white to-gray-50 p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+                 <div className="flex items-center mb-6">
+                   <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 animate-bounce-slow">
+                     <span className="text-2xl">🛒</span>
+                   </div>
+                   <h4 className="text-2xl font-bold text-teal-600">Online Shopping Database Management System</h4>
+                 </div>
+                 <p className="text-blue-600 font-semibold mb-4 bg-blue-50 px-4 py-2 rounded-lg inline-block animate-slide-in-left">MySQL, PHP, HTML5, CSS, JavaScript</p>
+                 <p className="text-gray-700 leading-relaxed animate-slide-in-right">
+                   Developed a comprehensive backend program that keeps online orders up to date with seller 
+                   information, products, addresses, and pricing. Created a MySQL database with proper table 
+                   relationships, connected using PHP locally, and built a web interface with HTML5, CSS, and 
+                   JavaScript. Implemented all CRUD operations from the web application.
+                 </p>
+               </div>
+              
+                             <div className="group bg-gradient-to-br from-white to-gray-50 p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+                 <div className="flex items-center mb-6">
+                   <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 animate-bounce-slow">
+                     <span className="text-2xl">📝</span>
+                   </div>
+                   <h4 className="text-2xl font-bold text-teal-600">Text Editor in Java</h4>
+                 </div>
+                 <p className="text-blue-600 font-semibold mb-4 bg-blue-50 px-4 py-2 rounded-lg inline-block animate-slide-in-left">Java, Java Applet, Swing</p>
+                 <p className="text-gray-700 leading-relaxed animate-slide-in-right">
+                   Designed a simple text editor that works similarly to Microsoft Notepad but with simplified 
+                   Java code. Using Java Applet technology, achieved all the functionality found in Microsoft's 
+                   current notepad application, including text editing, file operations, and basic formatting features.
+                 </p>
+               </div>
+              
+                             <div className="group bg-gradient-to-br from-white to-gray-50 p-8 rounded-3xl shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 lg:col-span-2 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+                 <div className="flex items-center mb-6">
+                   <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 animate-bounce-slow">
+                     <span className="text-2xl">📊</span>
+                   </div>
+                   <h4 className="text-2xl font-bold text-teal-600">US Traffic Accidents Analysis</h4>
+                 </div>
+                 <p className="text-blue-600 font-semibold mb-4 bg-blue-50 px-4 py-2 rounded-lg inline-block animate-slide-in-left">Python, Data Analysis, Machine Learning, Regression Model, Big Data Tools</p>
+                 <p className="text-gray-700 leading-relaxed animate-slide-in-right">
+                   Led exploratory data analysis on accidents in the US from 2016–2020 across 49 states, analyzing 
+                   severity levels and creating visualizations using hands-on big-data tools. Developed a comprehensive 
+                   report predicting that without intervention, accident severity will increase exponentially in coming years. 
+                   Built a regression model with 88% accuracy to predict outcomes while maintaining population consistency.
+                 </p>
+               </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>

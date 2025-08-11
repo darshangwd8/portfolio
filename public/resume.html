@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan Shivaram - Software Developer Resume</title>
+    <meta name="description" content="Software Developer specializing in Java Backend Development and JavaScript. Full-stack developer with expertise in Spring Boot, React, and modern web technologies." />
+    <script>
+        function printResume() {
+            window.print();
+        }
+        
+        function downloadPDF() {
+            // This will trigger the browser's print dialog which can save as PDF
+            // The filename will be suggested as "Darshan_Shivaram_Software_Developer_Resume.pdf"
+            window.print();
+        }
+        
+        // Set the document title for better PDF filename suggestion
+        document.title = "Darshan Shivaram - Software Developer Resume";
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #14b8a6;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .name {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #14b8a6;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 1.3em;
+            color: #3b82f6;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9em;
+        }
+        
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #14b8a6, #3b82f6);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(20, 184, 166, 0.3);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+        }
+        
+        @media print {
+            .action-buttons {
+                display: none;
+            }
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #14b8a6;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .summary {
+            text-align: justify;
+            font-size: 1em;
+            line-height: 1.7;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-category {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #14b8a6;
+        }
+        
+        .skill-category h4 {
+            color: #3b82f6;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .skill-list {
+            list-style: none;
+        }
+        
+        .skill-list li {
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+        
+        .experience-item, .project-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
+        }
+        
+        .experience-title, .project-title {
+            font-weight: bold;
+            color: #14b8a6;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        .experience-company, .project-tech {
+            color: #3b82f6;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .experience-date {
+            color: #6b7280;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .experience-description, .project-description {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #8b5cf6;
+        }
+        
+        .education-details h4 {
+            color: #14b8a6;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+        
+        .education-details p {
+            color: #3b82f6;
+            font-weight: 500;
+        }
+        
+        .education-date {
+            color: #6b7280;
+            font-size: 0.9em;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            
+            .experience-item, .project-item, .education-item, .skill-category {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Darshan Shivaram</div>
+        <div class="title">Software Developer & Backend Specialist</div>
+        <div class="contact-info">
+            <span>📧 darshan.shivaram@email.com</span>
+            <span>📱 +1 (555) 123-4567</span>
+            <span>📍 Location: Available for relocation</span>
+            <span>🔗 linkedin.com/in/darshanshivram</span>
+            <span>🐙 github.com/darshangwd8</span>
+        </div>
+        
+        <div class="action-buttons">
+            <button onclick="printResume()" class="btn btn-primary">
+                🖨️ Print Resume
+            </button>
+            <button onclick="downloadPDF()" class="btn btn-secondary">
+                📄 Save as PDF
+            </button>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <div class="summary">
+            Passionate software developer with extensive expertise in Java Backend Development and JavaScript. 
+            Specializing in building scalable, high-performance applications using Spring Boot, microservices architecture, 
+            and modern web technologies. Proven ability to leverage full-stack knowledge and engineering principles 
+            to design and develop robust applications. Quick learner with strong problem-solving skills and a commitment 
+            to writing clean, maintainable code. Actively seeking Full-Stack Development and Web Application Development 
+            opportunities starting January 2023.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Backend Development</h4>
+                <ul class="skill-list">
+                    <li>Java 8/11/17</li>
+                    <li>Spring Boot & Spring Cloud</li>
+                    <li>RESTful APIs & Microservices</li>
+                    <li>JPA/Hibernate</li>
+                    <li>Maven & Gradle</li>
+                    <li>Redis & Caching</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Frontend Development</h4>
+                <ul class="skill-list">
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js & Next.js</li>
+                    <li>Node.js & Express</li>
+                    <li>TypeScript</li>
+                    <li>HTML5 & CSS3</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Databases</h4>
+                <ul class="skill-list">
+                    <li>MySQL & PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                    <li>Database Design</li>
+                    <li>SQL Optimization</li>
+                </ul>
+            </div>
+            
+            <div class="skill-category">
+                <h4>DevOps & Tools</h4>
+                <ul class="skill-list">
+                    <li>Docker & Kubernetes</li>
+                    <li>AWS Cloud Services</li>
+                    <li>Git & GitHub</li>
+                    <li>CI/CD Pipelines</li>
+                    <li>Linux/Unix</li>
+                    <li>Postman & Swagger</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        
+        <div class="experience-item">
+            <div class="experience-title">Software Developer Intern</div>
+            <div class="experience-company">Tech Solutions Inc.</div>
+            <div class="experience-date">June 2022 - December 2022</div>
+            <div class="experience-description">
+                • Developed and maintained RESTful APIs using Spring Boot and Java, improving system performance by 40%<br>
+                • Implemented microservices architecture for e-commerce platform, reducing deployment time by 60%<br>
+                • Collaborated with cross-functional teams to deliver high-quality software solutions<br>
+                • Utilized React.js and Node.js to build responsive web applications<br>
+                • Integrated third-party APIs and payment gateways for seamless user experience
+            </div>
+        </div>
+        
+        <div class="experience-item">
+            <div class="experience-title">Junior Developer</div>
+            <div class="experience-company">Startup Ventures</div>
+            <div class="experience-date">January 2022 - May 2022</div>
+            <div class="experience-description">
+                • Built scalable backend services using Java Spring Boot and MySQL<br>
+                • Developed frontend components using React.js and modern JavaScript<br>
+                • Implemented authentication and authorization using JWT tokens<br>
+                • Optimized database queries and improved application performance<br>
+                • Participated in code reviews and agile development processes
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Relevant Projects</div>
+        
+        <div class="project-item">
+            <div class="project-title">Student Grade Entry Application</div>
+            <div class="project-tech">Java Spring Boot, Thymeleaf, H2 Database, OAuth 2.0, Microservices, Eureka Server, Jenkins, AWS</div>
+            <div class="project-description">
+                Developed a microservice-based web application that allows teachers to securely authenticate, 
+                enter grades for multiple students, and provides analytics for analyzing student performance. 
+                Implemented OAuth 2.0 authentication, microservices architecture with Eureka Server for service 
+                discovery, and deployed using Jenkins CI/CD pipeline on AWS cloud infrastructure.
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">Food Ordering App</div>
+            <div class="project-tech">Java Spring, MongoDB, React.js, Vercel</div>
+            <div class="project-description">
+                Developed a full-stack web application that allows users to browse restaurants, view menus, 
+                place orders, and make payments online. Built with Java Spring backend, MongoDB database, 
+                React.js frontend, and deployed on the Vercel platform for optimal performance and scalability.
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">Online Shopping Database Management System</div>
+            <div class="project-tech">MySQL, PHP, HTML5, CSS, JavaScript</div>
+            <div class="project-description">
+                Developed a comprehensive backend program that keeps online orders up to date with seller 
+                information, products, addresses, and pricing. Created a MySQL database with proper table 
+                relationships, connected using PHP locally, and built a web interface with HTML5, CSS, and 
+                JavaScript. Implemented all CRUD operations from the web application with organized information 
+                access for users at various levels.
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">Text Editor in Java</div>
+            <div class="project-tech">Java, Java Applet, Swing</div>
+            <div class="project-description">
+                Designed a simple text editor that works similarly to Microsoft Notepad but with simplified 
+                Java code. Using Java Applet technology, achieved all the functionality found in Microsoft's 
+                current notepad application, including text editing, file operations, and basic formatting features.
+            </div>
+        </div>
+        
+        <div class="project-item">
+            <div class="project-title">US Traffic Accidents Analysis</div>
+            <div class="project-tech">Python, Data Analysis, Machine Learning, Regression Model, Big Data Tools</div>
+            <div class="project-description">
+                Led exploratory data analysis on accidents in the US from 2016–2020 across 49 states, analyzing 
+                severity levels and creating visualizations using hands-on big-data tools. Developed a comprehensive 
+                report predicting that without intervention, accident severity will increase exponentially in coming years. 
+                Built a regression model with 88% accuracy to predict outcomes while maintaining population consistency.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        
+        <div class="education-item">
+            <div class="education-details">
+                <h4>Bachelor of Science in Computer Science</h4>
+                <p>University of Technology</p>
+            </div>
+            <div class="education-date">2019 - 2023</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Certifications</div>
+        <ul style="list-style: none; padding-left: 0;">
+            <li style="margin-bottom: 10px; padding: 10px; background: #f8fafc; border-radius: 5px; border-left: 4px solid #14b8a6;">
+                <strong>AWS Certified Developer Associate</strong> - Amazon Web Services
+            </li>
+            <li style="margin-bottom: 10px; padding: 10px; background: #f8fafc; border-radius: 5px; border-left: 4px solid #14b8a6;">
+                <strong>Spring Framework Certification</strong> - Pivotal Software
+            </li>
+            <li style="margin-bottom: 10px; padding: 10px; background: #f8fafc; border-radius: 5px; border-left: 4px solid #14b8a6;">
+                <strong>MongoDB Developer Certification</strong> - MongoDB University
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <span style="background: #e0f2fe; padding: 5px 15px; border-radius: 20px; font-size: 0.9em;">English (Fluent)</span>
+            <span style="background: #e0f2fe; padding: 5px 15px; border-radius: 20px; font-size: 0.9em;">Hindi (Native)</span>
+            <span style="background: #e0f2fe; padding: 5px 15px; border-radius: 20px; font-size: 0.9em;">Kannada (Native)</span>
+        </div>
+    </div>
+</body>
+</html>
