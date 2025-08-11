@@ -36,15 +36,16 @@ export default function Home() {
                <li>
                  <BsBatteryHalf className="cursor-pointer text-4xl text-teal-600 hover:text-teal-700 transition-colors duration-300 hover:scale-110 transform" />
                </li>
-               <li>
-                 <a
-                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md"
-                   href="/resume.html"
-                   target="_blank"
-                 >
-                   Resume
-                 </a>
-               </li>
+                               <li>
+                  <a
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-6 py-3 rounded-lg font-semibold hover:from-cyan-600 hover:to-teal-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md"
+                    href="/resume.html"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Resume
+                  </a>
+                </li>
              </ul>
            </nav>
                                            <div className="text-center p-10 py-16 relative z-10">
@@ -64,22 +65,24 @@ export default function Home() {
               </div>
             </div>
                      <div className="flex justify-center items-center space-x-12 py-8 relative z-10">
-             <a 
-               href="https://github.com/darshangwd8" 
-               target="_blank"
-               className="group flex flex-col items-center space-y-2 text-gray-600 hover:text-teal-600 transition-all duration-300 transform hover:scale-110 animate-bounce-slow"
-             >
+                           <a 
+                href="https://github.com/darshangwd8" 
+                target="_blank"
+                rel="noreferrer"
+                className="group flex flex-col items-center space-y-2 text-gray-600 hover:text-teal-600 transition-all duration-300 transform hover:scale-110 animate-bounce-slow"
+              >
                <div className="bg-white p-4 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 animate-float">
                  <AiFillGithub className="text-5xl" alt="GitHub" />
                </div>
                <span className="text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">GitHub</span>
              </a>
-             <a
-               href="https://www.linkedin.com/in/darshanshivram/"
-               target="_blank"
-               className="group flex flex-col items-center space-y-2 text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-110 animate-bounce-slow"
-               style={{ animationDelay: '0.5s' }}
-             >
+                           <a
+                href="https://www.linkedin.com/in/darshanshivram/"
+                target="_blank"
+                rel="noreferrer"
+                className="group flex flex-col items-center space-y-2 text-gray-600 hover:text-blue-600 transition-all duration-300 transform hover:scale-110 animate-bounce-slow"
+                style={{ animationDelay: '0.5s' }}
+              >
                <div className="bg-white p-4 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 animate-float" style={{ animationDelay: '0.5s' }}>
                  <AiFillLinkedin className="text-5xl" alt="LinkedIn" />
                </div>
@@ -246,7 +249,7 @@ export default function Home() {
                  <p className="text-blue-600 font-semibold mb-4 bg-blue-50 px-4 py-2 rounded-lg inline-block animate-slide-in-left">Java, Java Applet, Swing</p>
                  <p className="text-gray-700 leading-relaxed animate-slide-in-right">
                    Designed a simple text editor that works similarly to Microsoft Notepad but with simplified 
-                   Java code. Using Java Applet technology, achieved all the functionality found in Microsoft's 
+                   Java code. Using Java Applet technology, achieved all the functionality found in Microsoft&apos;s 
                    current notepad application, including text editing, file operations, and basic formatting features.
                  </p>
                </div>
